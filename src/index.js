@@ -11,6 +11,7 @@ import NavbarComponent from './Components/NavBarComponents';
 import LivrosExercise from './Exercise/Livros';
 import BemVindoExercise from './Exercise/BemVindo';
 import FilmesExercise from './Exercise/Filmes';
+import LoginExercise from './Exercise/login';
 const router = createBrowserRouter([
 
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/livros",
     element: <LivrosExercise/>,
+  },
+  {
+    path: "/login",
+    element: <LoginExercise/>,
   },
 ]);
 
