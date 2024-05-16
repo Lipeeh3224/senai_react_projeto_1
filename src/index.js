@@ -12,6 +12,7 @@ import LivrosExercise from './Exercise/Livros';
 import BemVindoExercise from './Exercise/BemVindo';
 import FilmesExercise from './Exercise/Filmes';
 import LoginExercise from './Exercise/login';
+
 const router = createBrowserRouter([
 
   {

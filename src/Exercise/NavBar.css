@@ -1,0 +1,37 @@
+
+  
+.navbar-custom {
+    background-color: #303030; /* Cor de fundo personalizada */
+    font-size: 18px; /* Tamanho da fonte para toda a navbar */
+  }
+.navbar-custom {
+    font-size: 22px; /* Ajuste o valor conforme necessário */
+  }
+  
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link,
+  .navbar-custom .btn {
+    font-size: inherit; /* Tamanho de fonte definido para a navbar */
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0); /* Borda cinza ao redor do texto */
+    padding: 3px 6px; /* Adiciona preenchimento para que a borda não fique colada no texto */
+    background-color: #ffffff;
+    border-radius: 4px; /* Adiciona cantos arredondados para um visual mais agradável */
+  }
+  
+  
+  .navbar-custom .nav-link {
+    margin-right: 180px; /* Espaçamento entre os links */
+  }
+  
+  .navbar-custom .nav-link:last-child {
+    margin-right: 0;
+  }
+
+
+  /* global.css */
+body {
+    background-color: black; /* Define a cor de fundo da página como preto */
+    color: white; /* Define a cor do texto como branco para garantir a legibilidade */
+  }
+  

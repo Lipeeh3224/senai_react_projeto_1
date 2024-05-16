@@ -1,7 +1,3 @@
-import { useState } from "react";
-import Alert from 'react-bootstrap/Alert';
-import axios from "axios";
-import { Form } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel';
 
 
