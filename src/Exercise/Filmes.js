@@ -1,4 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
+import Placeholder from 'react-bootstrap/Placeholder';
+
 
 
 function BemVindoExercise(){

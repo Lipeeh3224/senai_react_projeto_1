@@ -12,6 +12,7 @@ import LivrosExercise from './Exercise/Livros';
 import BemVindoExercise from './Exercise/BemVindo';
 import FilmesExercise from './Exercise/Filmes';
 import LoginExercise from './Exercise/login';
+import CadastroExercise from './Exercise/Cadastro';
 
 const router = createBrowserRouter([
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginExercise/>,
+  },
+  {
+    path: "/cadastro",
+    element: <CadastroExercise/>,
   },
 ]);
 

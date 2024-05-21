@@ -2,32 +2,17 @@ import { Form } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Alert from 'react-bootstrap/Alert';
-import axios from "axios";
-import { useState } from "react";
 
-function LoginExercise(){
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
-
-
-  async function handleSubmit(e){
-    e.preventDefault();
-
-    let response = await axios.post ('http://143.198.156.185/api/auth/login')
-    .then(function (response) {
-      console.log(JSON.stringify(response.data));
-    })
-    .catch(function (error) {
-      console.log(error);
-    }); 
-  }
-
+function CadastroExercise(){
 
 return(
 <>
 <Container>
 <Form>
+<Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Nome</Form.Label>
+        <Form.Control type="email" placeholder="Digite seu Nome aqui" />
+      </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>E-Mail</Form.Label>
         <Form.Control type="email" placeholder="E-Mail" />
@@ -39,15 +24,13 @@ return(
         <Form.Label>Senha</Form.Label>
         <Form.Control type="password" placeholder="Senha" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Manter Conectado" />
-      </Form.Group>
       <Button variant="primary" type="submit">
-        Logar
+        Cadastrar
       </Button>
     </Form>
     </Container>
     </>
+
 )
 }
-export default LoginExercise;
+export default CadastroExercise;

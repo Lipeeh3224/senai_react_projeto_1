@@ -1,7 +1,7 @@
 
   
 .navbar-custom {
-    background-color: #303030; /* Cor de fundo personalizada */
+    background-color: #000000; /* Cor de fundo personalizada */
     font-size: 18px; /* Tamanho da fonte para toda a navbar */
   }
 .navbar-custom {
@@ -12,11 +12,11 @@
   .navbar-custom .nav-link,
   .navbar-custom .btn {
     font-size: inherit; /* Tamanho de fonte definido para a navbar */
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border: 1px solid rgb(0, 0, 0); /* Borda cinza ao redor do texto */
-    padding: 3px 6px; /* Adiciona preenchimento para que a borda não fique colada no texto */
-    background-color: #ffffff;
-    border-radius: 4px; /* Adiciona cantos arredondados para um visual mais agradável */
+    padding: 3px 6px; /* Preenchimento para que a borda não fique colada no texto */
+    background-color: #1b1b1b;
+    border-radius: 4px; /* Cantos arredondados */
   }
   
   
@@ -31,7 +31,7 @@
 
   /* global.css */
 body {
-    background-color: black; /* Define a cor de fundo da página como preto */
-    color: white; /* Define a cor do texto como branco para garantir a legibilidade */
+    background-color: black; /* Fundo da página*/
+    color: white; /* Define a cor do texto */
   }
   

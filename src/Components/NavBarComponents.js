@@ -21,6 +21,7 @@ function NavbarComponent() {
           </Nav>
           <Nav className="ms-auto">
             <Button variant="dark" href="/login">Login</Button>
+            <Button variant="dark" href="/cadastro">Cadastro</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
