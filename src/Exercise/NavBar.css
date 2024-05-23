@@ -1,37 +1,58 @@
+.navbar-custom {
+    background-color: #0000009a; 
+    font-size: 18px; 
+    box-shadow: 0 4px 6px #fec229;
+    font-size: 22px; 
+  }
 
-  
-.navbar-custom {
-    background-color: #000000; /* Cor de fundo personalizada */
-    font-size: 18px; /* Tamanho da fonte para toda a navbar */
-  }
-.navbar-custom {
-    font-size: 22px; /* Ajuste o valor conforme necessário */
-  }
-  
   .navbar-custom .navbar-brand,
   .navbar-custom .nav-link,
   .navbar-custom .btn {
-    font-size: inherit; /* Tamanho de fonte definido para a navbar */
+    font-size: inherit; 
     color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0); /* Borda cinza ao redor do texto */
-    padding: 3px 6px; /* Preenchimento para que a borda não fique colada no texto */
+    border: 1px solid #fec029; 
+    padding: 3px 6px; 
     background-color: #1b1b1b;
-    border-radius: 4px; /* Cantos arredondados */
+    border-radius: 4px; 
+    color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
   }
   
-  
-  .navbar-custom .nav-link {
-    margin-right: 180px; /* Espaçamento entre os links */
-  }
-  
-  .navbar-custom .nav-link:last-child {
-    margin-right: 0;
-  }
-
-
-  /* global.css */
 body {
-    background-color: black; /* Fundo da página*/
-    color: white; /* Define a cor do texto */
+    background-color: rgb(0, 0, 0); /*cor de fundo da tela*/
   }
-  
+
+.nav-center {
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar-custom .navbar-brand {
+  color: #fff; /*cor do bem vindo*/
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navbar-custom .nav-link-custom {
+  color: #adb5bd; /* cor filmes e livros*/
+  font-size: 1.1rem;
+  margin: 0 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-center {
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar-custom .btn-outline-light {
+  color: #fff; /* cor login e cadastro*/
+  border-color: #fec029;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #000000;
+  color: #fec029;
+}

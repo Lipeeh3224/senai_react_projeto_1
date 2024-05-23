@@ -1,0 +1,19 @@
+
+  .card {
+    box-shadow: 0 4px 8px #fec029; 
+  }
+  
+  .card-header {
+    background-color: #000000; 
+    color: white; 
+  }
+  
+  .btn-primary {
+    background-color: #000000;
+    border-color: #ff0000; 
+  }
+  
+  .min-vh-100 {
+    min-height: 100vh; 
+  }
+  
