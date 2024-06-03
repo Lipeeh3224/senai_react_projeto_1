@@ -4,11 +4,12 @@ import axios from 'axios';
 
 const BemVindoExercise = () => {
     const [filmes, setFilmes] = useState([]);
+    const [livros, setLivros] = useState([]);
 
     useEffect(() => {
         async function buscarFilmes() {
             try {
-                const response = await axios.get("http://143.198.156.185/api/home");
+                const response = await axios.get("http://143.198.156.185/api/filmes");
                 setFilmes(response.data);
             } catch (error) {
                 console.log(error);
@@ -17,13 +18,17 @@ const BemVindoExercise = () => {
         buscarFilmes();
     }, []);
 
+    async function buscaLivros() {
+        const filmes = axios.get("http://143.198.156.185/api/livros").then(function (value) {
+            setLivros(value.data);
+        }).catch(function (value) {
+            console.log(value);
+        });
+    }
+    buscaLivros();
+
     return (
         <Container>
-            <Row className="mt-4 justify-content-center">
-                <Col xs={12} className="text-center">
-                    <h1 style={{ textShadow: '1px 1px #fec029' }}>Bem-vindo ao nosso site!</h1>
-                </Col>
-            </Row>
             <Row className="mt-4">
                 <Col>
                     <Carousel>
@@ -31,8 +36,9 @@ const BemVindoExercise = () => {
                             <Carousel.Item key={index}>
                                 <img
                                     className="d-block w-100"
-                                    src={filme.imagens[2]}
+                                    src={filme.imagens[0].url}
                                     alt={filme.titulo}
+                                    style={{ width: '700px', height: '700px' }}
                                 />
                                 <Carousel.Caption>
                                     <h3 style={{ textShadow: '1px 1px #fec029' }}>{filme.title}</h3>
@@ -66,12 +72,12 @@ const BemVindoExercise = () => {
                 </Col>
             </Row>
             <Row className="pt-2 pb-3 justify-content-center">
-                {filmes.map((filme, index) => (
+                {livros.map((livro, index) => (
                     <Col key={index} xs={6} sm={4} md={3} lg={2} className="text-center">
                         <Card style={{ border: '2px solid #fec029', borderRadius: '10px', marginBottom: '15px' }}>
-                            <Card.Img variant="top" src={filme.url_thumbnail} />
+                            <Card.Img variant="top" src={livro.url_thumbnail} />
                             <Card.Body>
-                                <Card.Title>{filme.titulo}</Card.Title>
+                                <Card.Title>{livro.titulo}</Card.Title>
                             </Card.Body>
                         </Card>
                     </Col>
