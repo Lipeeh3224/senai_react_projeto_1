@@ -31,7 +31,7 @@ const BemVindoExercise = () => {
         <Container>
             <Row className="mt-4">
                 <Col>
-                    <Carousel>
+                    <Carousel style={{ border: '2px solid #fec029', boxShadow: '6px 6px 6px rgba(254, 192, 41, 0.5)' }}>
                         {filmes.map((filme, index) => (
                             <Carousel.Item key={index}>
                                 <img
@@ -41,7 +41,7 @@ const BemVindoExercise = () => {
                                     style={{ width: '700px', height: '700px' }}
                                 />
                                 <Carousel.Caption>
-                                    <h3 style={{ textShadow: '1px 1px #fec029' }}>{filme.title}</h3>
+                                    <h3 style={{ textShadow: '1px 1px #fec029' }}>{filme.titulo}</h3>
                                     <p>{filme.sinopse}</p>
                                 </Carousel.Caption>
                             </Carousel.Item>
