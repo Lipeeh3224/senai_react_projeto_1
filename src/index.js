@@ -17,6 +17,10 @@ import CadastroExercise from './Exercise/Cadastro';
 const router = createBrowserRouter([
 
   {
+    path: "/",
+    element: <BemVindoExercise/>,
+  },
+  {
     path: "/bemvindo",
     element: <BemVindoExercise/>,
   },
